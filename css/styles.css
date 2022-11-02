@@ -1,0 +1,142 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1 h2 h3 h4 h5 h6{
+    font-family: 'Oswald', sans-serif;
+}
+.container{
+    width: 100%;
+    margin: auto;
+}
+.header-index{
+    width: 100%;
+    background-image:linear-gradient(to right ,rgb(0, 0, 4),rgb(0, 93, 130));
+    color: #000000;
+}
+.header-index .container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas:"logo navMenu navMenu";
+}
+.header-index .nav-index{
+    grid-area: navMenu;
+}
+
+.logo{
+    grid-area: logo;
+}
+.logo1{
+    width: 300px;
+}
+.nav-index ul {
+    display: flex;
+    justify-content: flex-end;
+    height: 100%;
+    align-items: center;
+}
+.nav-index ul li{
+    list-style: none;
+    margin-right: 18px;
+    font-size: 16px;
+    text-align: center;
+    
+}
+a{
+    
+    text-decoration: none;
+    color: #ffffff;
+}
+main{
+    
+    background-color: rgba(255, 255, 255, 0);
+}
+.img_negocio{
+    width: 450px;
+    margin: auto;
+}
+.seccion-bienvenida{
+    padding: 32px 0;
+    width: 100%;
+}
+.seccion-bienvenida h1{
+    text-align: center;
+    font-size: 42px;
+    grid-area: tituloBienvenida;
+}
+.seccion-bienvenida .container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px 600px;
+    grid-template-areas: "tituloBienvenida tituloBienvenida"
+                        "descripcion img";
+    margin-top: 42px;
+    align-items: center;
+    gap: 30px;
+}
+.seccion-bienvenida .descripcion {
+    grid-area: descripcion;
+}
+.seccion-bienvenida .descripcion h2{
+    margin-bottom: 22px;
+    font-size: 28px;
+    color: #000000;
+}
+.seccion-bienvenida .descripcion p{
+    color: #000000;
+    margin-bottom: 16px;
+    margin-left: 8px;
+}
+.seccion-bienvenida .img-bienvenida{
+    grid-area: img;
+}
+.seccion-bienvenida .img-bienvenida img{
+    display:block;
+    max-width: 80%;
+    margin: auto;
+}
+footer{
+    background-color: #000000;
+}
+@media only screen and (min-width:320px) and (max-width:767px) {
+    .header-index .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-areas: "logo"
+                            "navMenu";
+    }
+    .header-index .logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .header-index .nav-index ul{
+        flex-direction: column;
+        
+    }
+    .header-index .nav-index ul li{
+        margin-right: 0;
+        margin-bottom: 16px;
+        padding: 20px;
+    }
+    .seccion-bienvenida {
+        height: auto;
+    }
+    .seccion-bienvenida .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto ;
+        grid-template-areas:"tituloBienvenida"
+                            "titulobienvenida"
+                            "img"
+                            "descripcion";
+    }
+    .seccion-bienvenida .descripcion{
+        text-align: center;
+    }
+    .seccion-bienvenida .descripcion p{
+        font-size: 18px;
+    }
+}
