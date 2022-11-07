@@ -1,59 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Poppins:wght@400;700&display=swap"
+        rel="stylesheet">
     <!-- iconos font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
         integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Inicio</title>
 </head>
+
 <body>
+<header class="header-index">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html"><img class="logo1" src="./img/logo.png" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html" style="color:#ffffff ;" >Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/productos.html" style="color: #ffffff;">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html" style="color:#ffffff ;">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/ubicacion.html" style="color: #ffffff;">Ubicacion</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
     
-        <header class="header-index">
-            <div class="container">
-                <div class="logo"><img class="logo1" src="./img/logo.png" alt=""></div>
-                <nav class="nav-index">
-                    <ul>
-                        <li><a href="./index.html">Inicio</a></li>
-                        <li><a href="pages/productos.html">Productos</a></li>
-                        <li><a href="pages/contacto.html">Contacto</a></li>
-                        <li><a href="pages/ubicacion.html">Ubicación</a></li>
-                    </ul>
-                </nav>
-            </div>    
-        </header>
-    
-        
-    
+
+
+
     <main class="pagina-inicio">
         <section class="seccion-bienvenida">
             <div class="container">
-                <h1>bienvenidos a world fish, pescaderia y granja</h1>
-                <div class="descripcion">
-                    <h2>¿Quienes somos?</h2>
-                    <p>Somos una mediana empresa de productos minoristas y mayoristas dedicados principalmente al
-                    pescado como fundamental materia prima.</p>
-                    <p>Pero también vendemos variedad de productos orientados a lo que es pollo y cerdo entre otras
-                    cosas más. Este negocio empezo en el año 2010, siendo un pequeño almacen de barrio pero a lo
-                    largo de los años y pasando por diferentes etapas nos dimos cuenta de lo que mejor hacemos y
-                    nuestra idea es expandirnos un poco más. </p>
-                    <p>Espero que puedan visualizar un poco de lo que somos y podemos ofrecer a través de esta página
-                    web.</p>
+                <h1 class="mb-5 mt-5">bienvenidos a world fish, pescaderia y granja</h1>
+                <div class="row">
+                    <div class="descripcion col-12 col-md-6 mb-5 mt-5">
+                        <h2>¿Quienes somos?</h2>
+                        <p>Somos una mediana empresa de productos minoristas y mayoristas dedicados principalmente al
+                        pescado como fundamental materia prima.</p>
+                        <p>Pero también vendemos variedad de productos orientados a lo que es pollo y cerdo entre otras
+                        cosas más. Este negocio empezo en el año 2010, siendo un pequeño almacen de barrio pero a lo
+                        largo de los años y pasando por diferentes etapas nos dimos cuenta de lo que mejor hacemos y
+                        nuestra idea es expandirnos un poco más. </p>
+                        <p>Espero que puedan visualizar un poco de lo que somos y podemos ofrecer a través de esta página
+                        web.</p>
+                    </div>
+                    <div class="img-bienvenida col-12 col-md-6 mt-5">
+                        <img src="./img/negocio.jpeg" alt="" class="img_negocio">
+                    </div>
                 </div>
-                <div class="img-bienvenida">
-                    <img src="./img/negocio.jpeg" alt="" class="img_negocio">
                 </div>
+                
+                
+                
             </div>
-            
+
         </section>
-        
+
     </main>
     <footer>
         <div class="container">
@@ -69,6 +95,11 @@
 
         </div>
     </footer>
-    
+    <a href="#" class="subir">🐟</a>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
 </body>
+
 </html>

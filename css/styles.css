@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+html{
+    scroll-behavior:smooth;
+}
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -10,15 +13,20 @@ h1 h2 h3 h4 h5 h6{
     font-family: 'Oswald', sans-serif;
 }
 .container{
-    width: 100%;
+    width: 90%;
     margin: auto;
+}
+.active{
+    color: #fff;
+    border-bottom: 1px solid;
 }
 .header-index{
     width: 100%;
-    background-image:linear-gradient(to right ,rgb(0, 0, 4),rgb(0, 93, 130));
-    color: #000000;
+    background-image:linear-gradient(to right ,rgb(0, 0, 4),rgb(7, 71, 144));
+    color: rgb(255, 255, 255);
+    font-size: 1.6rem;
 }
-.header-index .container{
+/* .header-index .container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-template-areas:"logo navMenu navMenu";
@@ -29,25 +37,32 @@ h1 h2 h3 h4 h5 h6{
 
 .logo{
     grid-area: logo;
+} */
+.navbar-nav{
+    margin-left: auto;
+    color: rgb(255, 255, 255);
 }
+
 .logo1{
     width: 300px;
 }
-.nav-index ul {
+.nav-index ul{
     display: flex;
     justify-content: flex-end;
     height: 100%;
     align-items: center;
+    color: #ffffff;
+    
 }
 .nav-index ul li{
     list-style: none;
     margin-right: 18px;
     font-size: 16px;
     text-align: center;
+    color: #ffffff;
     
 }
 a{
-    
     text-decoration: none;
     color: #ffffff;
 }
@@ -63,7 +78,7 @@ main{
     padding: 32px 0;
     width: 100%;
 }
-.seccion-bienvenida h1{
+/* .seccion-bienvenida h1{
     text-align: center;
     font-size: 42px;
     grid-area: tituloBienvenida;
@@ -80,7 +95,7 @@ main{
 }
 .seccion-bienvenida .descripcion {
     grid-area: descripcion;
-}
+} */
 .seccion-bienvenida .descripcion h2{
     margin-bottom: 22px;
     font-size: 28px;
@@ -101,8 +116,31 @@ main{
 }
 footer{
     background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    height: auto;
+    font-size: 1.6rem;
+    padding-bottom: 15px;
 }
-@media only screen and (min-width:320px) and (max-width:767px) {
+footer p{
+    font-size: 18px;
+}
+.subir{
+    height: 60px;
+    width: 60px;
+    background-color: aquamarine;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 50%;
+    border: 3px solid #3584ca;
+    color: #ffffff;
+    box-shadow: 0 0 10px #ffffff;
+}
+/* @media only screen and (min-width:320px) and (max-width:767px) {
     .header-index .container{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(2,1fr);
@@ -139,4 +177,4 @@ footer{
     .seccion-bienvenida .descripcion p{
         font-size: 18px;
     }
-}
+} */
